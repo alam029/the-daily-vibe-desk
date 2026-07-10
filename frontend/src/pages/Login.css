@@ -1,0 +1,71 @@
+.login-page {
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.login-form input {
+  border: 1px solid var(--rule-soft);
+  background: var(--bg-raised);
+  color: var(--ink);
+  padding: 10px 12px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+}
+
+.login-form input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.login-form button {
+  margin-top: 8px;
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  padding: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+[data-theme='night-desk'] .login-form button {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.login-form button:disabled {
+  opacity: 0.6;
+}
+
+.login-page__switch {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  cursor: pointer;
+  text-decoration: underline;
+}

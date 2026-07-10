@@ -1,0 +1,19 @@
+.footer {
+  padding: 10px 24px;
+  background: var(--bg);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.footer-right p {
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
